@@ -698,6 +698,8 @@ function genPDF(){
     // En-tete bleu
     doc.setFillColor(13,43,94); doc.rect(0,0,W,44,"F");
     doc.setFillColor(42,181,200); doc.rect(0,44,W,2,"F");
+    // Logo blanc en haut à gauche
+    if(st.logo_src){ doc.addImage(st.logo_src,"PNG",6,4,36,36); }
     doc.setTextColor(255,255,255); doc.setFont("helvetica","bold");
     doc.setFontSize(13); doc.text("SENSIBILISATION AU HANDICAP EN ENTREPRISE",56,14,{align:"left"});
     doc.setFontSize(11); doc.text("MODULE DE FORMATION — TAXI TL",56,22,{align:"left"});
