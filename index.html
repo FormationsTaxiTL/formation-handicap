@@ -767,7 +767,7 @@ function genPDF(){
     // Attestation
     doc.setFillColor(232,247,250); doc.setDrawColor(42,181,200);
     var eng=doc.splitTextToSize(usr.p+" "+usr.n+" certifie avoir suivi et valide la formation de sensibilisation au handicap en entreprise proposee par Taxi TL. Cette attestation constitue un justificatif de formation au sens de l'article L4141-2 du Code du Travail.",CW-4);
-    doc.roundedRect(M,y-2,CW,eng.length*4.5+8,1.5,1.5,"FD");
+    doc.roundedRect(M,y-2,CW,eng.length*5+10,1.5,1.5,"FD");
     doc.setFont("helvetica","italic"); doc.setFontSize(7.5); doc.setTextColor(13,43,94);
     eng.forEach(function(l){doc.text(l,M+2,y);y+=4.5;});
 
